@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-ao">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+</head>
+<style>
+    body{
+        font-family: Arial, Helvetica, sans-serif;  
+    }
+    caption{
+       font-size: 1.5em;
+       font-weight: bold;
+       padding: 10px;
+       background-color: lightgray;
+    }
+    table{
+        width: 500px;
+        border-collapse: collapse;
+        position: relative;
+    }
+    td, th{
+        border: 1px solid black;
+        padding: 10px;
+       
+    }
+    thead, tfoot{
+        background-color: gray;
+        color: white;
+    }
+    thead > tr >th {
+        position: sticky;
+        top:0;
+        background-color: gray;
+    }
+    td.numero{
+        text-align: center;
+    }
+    tbody>tr:nth-child(2n){
+        background-color: lightgray;
+    }
+
+</style>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <!-- anatomia para tabelas grandes
+    table
+        caption
+        thead
+            td, td, th
+        tbody
+            tr, td, th
+        tfooter
+                tr, td, th
+    -->
+    <table>
+        <caption>População das províncias de Angola</caption>
+        <thead>
+            <tr>
+                <th scope="col">Província</th>
+                <th scope="col" style="width:150px;">Capital</th>
+                <th scope="col" style="width:50px;">População</th>   
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Bengo</td>
+                <td>Bengo</td>
+                <td class="numero">356641</td>
+            </tr>  
+            <tr>
+                <td>Benguela</td>
+                <td>Benguela</td>
+                <td class="numero">2231385</td>
+            </tr>  
+            <tr>
+                <td>Bié</td>
+                <td>Cuito</td>
+                <td class="numero">1455255</td>
+            </tr>
+            <tr>
+                <td>Cabinda</td>
+                <td>Cabinda</td>
+                <td class="numero">716076</td>
+            </tr>
+            <tr>
+                <td>Cuando-Cubango</td>
+                <td>Menongue</td>
+                <td class="numero">534002</td>
+            </tr>
+            <tr>
+                <td>Cuanza Norte</td>
+                <td>N'dalatando</td>
+                <td class="numero">443386</td>
+            </tr>
+            <tr>
+                <td>Cuanza Sul</td>
+                <td>Sumbe</td>
+                <td class="numero">1881873</td>
+            </tr>
+            <tr>
+                <td>Cunene</td>
+                <td>Ondjiva</td>
+                <td class="numero">990087</td>
+            </tr>
+            <tr>
+                <td>Huambo</td>
+                <td>Huambo</td>
+                <td class="numero">2019555</td>
+            </tr>
+            <tr>
+                <td>Huíla</td>
+                <td>Lubango</td>
+                <td class="numero">2497422</td>
+            </tr>
+            <tr>
+                <td>Luanda</td>
+                <td>Luanda</td>
+                <td class="numero">6945386</td>
+            </tr>
+            <tr>
+                <td>Lunda Norte</td>
+                <td>Dundo</td>
+                <td class="numero">862566</td>
+            </tr>
+            <tr>
+                <td>Lunda Sul</td>
+                <td>Saurimo</td>
+                <td class="numero">537587</td>
+            </tr>
+            <tr>
+                <td>Malange</td>
+                <td>Malange</td>
+                <td class="numero">986363</td>
+            </tr>
+            <tr>
+                <td>Moxico</td>
+                <td>Luena</td>
+                <td class="numero">758568</td>
+            </tr>
+            <tr>
+                <td>Namibe</td>
+                <td>Moçâmedes</td>
+                <td class="numero">495326</td>
+            </tr>
+            <tr>
+                <td>Uíge</td>
+                <td>Uíge</td>
+                <td class="numero">1483118</td>
+            </tr>
+            <tr>
+                <td>Zaire</td>
+                <td>Mbanza Congo</td>
+                <td class="numero">594428</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">Total de Habitantes</th>
+                <td>-</td>
+                <td class="numero"><strong>25789024</strong></td>
+            </tr>
+        </tfoot>
+    </table>
+    
+</body>
+</html>
